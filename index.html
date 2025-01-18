@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHUNKS AI</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        /* Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #1E1E1E;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            border-bottom: 1px solid #333;
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            color: #FFD700; /* Yellow Color */
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+
+        /* Navigation */
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            color: #fff;
+            font-size: 1.1rem;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-links a:hover {
+            background-color: #FFD700;
+        }
+
+        /* Main Section */
+        .main-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .intro-text {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #FFD700; /* Yellow Color for the text */
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .intro-description {
+            font-size: 1.1rem;
+            color: #ccc;
+            margin-bottom: 30px;
+        }
+
+        .get-started-btn {
+            padding: 15px 30px;
+            background-color: #FFD700;
+            color: #000;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .get-started-btn:hover {
+            background-color: #FFC107;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1E1E1E;
+            color: #ccc;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 0.9rem;
+        }
+
+        /* Mode Button */
+        .mode-btn {
+            padding: 10px 20px;
+            background-color: #FFD700;
+            color: #000;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .mode-btn:hover {
+            background-color: #FFC107;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>CHUNKS AI</h1>
+    <!-- Navigation Links -->
+    <div class="nav-links">
+        <a href="about.html">About</a>
+        <a href="mailto:skullchunksofficial@gmail.com">Contact</a>
+        <button class="mode-btn" onclick="toggleMode()">Switch Mode</button>
+    </div>
+</header>
+
+<!-- Main Section -->
+<div class="main-content">
+    <div>
+        <h2 class="intro-text">Welcome to CHUNKS AI</h2>
+        <p class="intro-description">Discover the best AI tools to simplify your life. Browse and find the tools that fit your needs.</p>
+        <button class="get-started-btn" onclick="window.location.href='ai.html'">Get Started</button>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2025 CHUNKS AI | BY SKULL CHUNKS | All Rights Reserved</p>
+</footer>
+
+<script>
+    let lightMode = false;
+
+    // Toggle Light/Dark Mode
+    function toggleMode() {
+        lightMode = !lightMode;
+
+        if (lightMode) {
+            document.body.style.backgroundColor = "#ffffff";
+            document.body.style.color = "#000000";
+        } else {
+            document.body.style.backgroundColor = "#121212";
+            document.body.style.color = "#ffffff";
+        }
+    }
+</script>
+
+</body>
+</html>
